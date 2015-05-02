@@ -79,7 +79,7 @@ namespace Conquer_Online_Server.Network.GamePackets
                     UpdateCount = UpdateCount - 1;
                     return false;
                 }
-                WriteUInt32((uint)secondsleft, offset + 20, Buffer);
+                WriteUInt32((uint)secondsleft, offset + 24, Buffer);
             }
             return true;
         }
@@ -104,7 +104,7 @@ namespace Conquer_Online_Server.Network.GamePackets
                     UpdateCount -= 1;
                     return false;
                 }
-                WriteUInt32((uint)secondsleft, offset + 20, Buffer);
+                WriteUInt32((uint)secondsleft, offset + 24, Buffer);
             }
             return true;
         }
